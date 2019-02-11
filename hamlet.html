@@ -1,0 +1,258 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Hamlet - The Choose Your Own Adventure Story</title>
+<script src='http://danielstern.github.io/cyo/bower_components/angular/angular.min.js'></script>
+<script src='http://danielstern.github.io/cyo/js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="http://danielstern.github.io/cyo/bower_components/bootstrap/dist/css/bootstrap.css">
+
+<link href="http://danielstern.github.io/cyo/lib/prism.css" rel="stylesheet" />
+<script src="http://danielstern.github.io/cyo/lib/prism.js"></script>
+
+
+<body ng-app="cyo" class='container'>
+    <h1 style="text-align: center">Hamlet</h1>
+    <h2 style="text-align: center">The Choose Your Own Adventure Story</h2>
+	<br>
+    <p>This game is powered by an Angular.js open-source framework that requires no technical knowledge to use. To see the framework, please visit <a href="https://github.com/danielstern/cyo"> the Github Repository </a>
+    </p>
+    <story>
+     
+        <page intro="">
+            <p>Horatio, Marcellus, and Bernardo approach the prince, Hamlet. They tell him that they’ve seen what they think is the ghost of his father. Hamlet joins them that night on their watch and, behold! His father’s ghost appears. He tells Hamlet that he was murdered by his brother, Claudius, who then married his wife, Gertrude and took over the throne. He asks Hamlet to seek revenge. </p>
+            <button choice madboy="">Hamlet loses his mind</button>
+            <button choice heplans="">Hamlet forms a plan</button>
+        </page>
+        
+        
+        <page madboy="">
+            <p>The news and the sight of his father’s ghost were too much for Hamlet. He goes insane, confusing everyone around him with lunatic outbursts.
+                Meanwhile, Polonius (Ophelia’s father), Claudius, and Gertrude form a plan to find out if the cause of Hamlet’s madness is love for Ophelia. They spy on Hamlet and Ophelia as Ophelia gives back the tokens of his affection.
+                Hamlet is unfocused and doesn’t seem to pay attention to what Ophelia is saying to him. His reaction isn’t what they expected. They agree lovesickness must not be the cause.</p>
+            <button choice="" killmadboy="">“We should send him to England”</button>
+            <button choice="" watchmadboy>“We should keep him close and see if we can figure it out”</button>
+        </page> 
+        
+        
+        <page killmadboy="">
+        <p> Then, a theatre troupe visits the castle. Gertrude and Claudius believe it might help Hamlet to watch them perform, but they have to have him dragged out when his outbursts continually interrupt the play.</p>
+        <p> Hamlet is sent away as quickly as possible. Claudius sees his opportunity to get rid of Hamlet for good and takes it – Rosencrantz and Guildenstern accompany Hamlet with a letter calling for his death.</p>
+        <p> Goodnight, sweet prince... </p>
+        <p> ROUTE: LEAVE QUIETLY </p>
+        <button restart>Play again?</button>
+        </page>
+        
+        <page watchmadboy="">
+        <p> Then, a theatre troupe visits the castle. Gertrude and Claudius believe it might help Hamlet to watch them perform, but they have to have him dragged out when his outbursts continually interrupt the play. </p>
+        <p> Rosencrantz and Guildenstern approach Hamlet after the play – he’s wanted in his mother’s quarters. Polonius hides himself in Gertrude’s quarters before Hamlet barges in. They argue about why Hamlet is acting this way, and Hamlet gets too intense and attacks her. His mother cries out, and Polonius yells for help. </p>
+        <p> <i> Hamlet:
+            How now, a rat? Dead for a ducat, dead! </i> </p>
+        <p>Hamlet stabs Polonius and he falls over dead. Hamlet and Gertrude continue to argue, with Hamlet making less and less sense, until the ghost appears, reminding Hamlet that his mother shouldn’t be blamed and revenge should be sought against Claudius.</p>
+        <p> The sight of the ghost sends Hamlet into a frenzy.  </p>
+        <button choice="" byemom=""> Hamlet stabs Gertrude </button>
+        <button choice="" nottobe=""> Hamlet runs </button>
+        </page>
+        
+        <page byemom="">
+        <p> Gertrude screams as Hamlet kills her just as he killed Polonius. Guards rush in to see Hamlet, bloody, standing over their bodies. </p>
+        <p> Hamlet is imprisoned and quickly sentenced to death. Laertes comes back to Denmark to find his father dead, his sister mad, and Hamlet already killed for his crimes. </p>
+        <p> Goodnight, sweet prince... </p>
+        <p> ROUTE: CLAUDIUS RULES ALONE </p>
+        <button restart>Play again?</button>
+        </page>
+        
+        <page nottobe="">
+        <p>Hamlet flees from the castle. The guards search and search but fail to find any hint of his whereabouts. Ophelia goes mad with grief after the loss of her father and the disappearance of Hamlet. </p>
+        <p>When Laertes returns to find his father dead and his sister mad, he wants to hunt Hamlet down and get revenge, but Hamlet cannot be found. Though they search and search, they never find out that Hamlet commit suicide that same night. </p>
+        <p> Goodnight, sweet prince... </p>
+        <p> ROUTE: NOT TO BE </p>
+        <button restart>Play again?</button>
+        </page>
+        
+        
+        <page heplans="">
+            <p> <i>Hamlet:
+            Here, as before, never, so help you mercy,
+            How strange or odd soe'er I bear myself
+            (As I perchance hereafter shall think meet
+            To put an antic disposition on),
+            That you, at such times seeing me, never shall—
+            With arms encumbered thus, or this headshake,
+            Or by pronouncing of some doubtful phrase,
+            As “Well, well, we know,” or “We could an if we would,”
+            Or “If we list to speak,” or “There be an if they might,”
+            Or such ambiguous giving out—to note
+            That you know aught of me. This not to do,
+            So grace and mercy at your most need help you,
+            Swear.
+            </i></p>
+            <p>Hamlet begins his act of madness: scaring and ignoring Ophelia, confusing everyone around him with seemingly lunatic outbursts. A theatrical troupe visits the castle, and he plans for them to perform “The Murder of Gonzago,” a play that mirrors what happened to the late king, to get Claudius to betray the fact that he murdered King Hamlet. </p>
+			<p>Meanwhile, Polonius (Ophelia’s father), Claudius, and Gertrude form a plan of their own to find out if the cause of Hamlet’s madness is love for Ophelia. They spy on Hamlet and Ophelia as Ophelia gives back the tokens of his affection. </p>
+			<p><i> Hamlet:
+            You should not have believed me, for virtue cannot so inoculate our old stock but we shall relish of it. I loved you not.</i></p>
+            <p><i> Ophelia:
+            I was the more deceived.</i> </p>
+            <p><i> Hamlet:
+            Get thee to a nunnery. Why wouldst thou be a breeder of sinners? I am myself indifferent honest, but yet I could accuse me of such things that it were better my mother had not borne me.</i></p>
+            <p> They agree that lovesickness must not be the cause. </p>
+            <button choice hegoestoschool>“We should send him to England” </button>
+            <button choice jailboy>“We should keep him close and see if we can figure it out” </button>
+        </page>
+        
+        <page jailboy="">
+        <p>Then, the play, enacting the perceived events of the king’s murder. Hamlet watches Claudius closely, and he does act strangely. When the king is killed, he demands light and flees, along with the rest of the audience. Rosencrantz and Guildenstern approach Hamlet – he’s wanted in his mother’s quarters.</p>
+        <p>Polonius hides himself in Gertrude’s quarters before Hamlet barges in. They argue, and Hamlet gets a little too intense. His mother cries out, and Polonius yells for help. </p>
+        <p><i>Hamlet:
+        How now, a rat? Dead for a ducat, dead!</i></p>
+        <p>Hamlet stabs Polonius and he falls over dead. Hamlet and Gertrude continue to argue until the ghost appears, reminding Hamlet that his mother shouldn’t be blamed and revenge should be sought against Claudius. Hamlet makes Gertrude promise not to tell anyone he’s faking being insane and leaves to hide the body. </p>
+        <p> Once Polonius’ body is found, Hamlet is locked away. Hamlet is still perceived to be insane by everyone that sees him, except his mother. Gertrude keeps quiet about what Hamlet told her.</p>
+        <p> Hamlet tries to explain things to Ophelia when she visits him, but she can’t forgive him for what he did. </p>
+        <p> Since he now knows that Hamlet suspects him of killing his father, Claudius uses this opportunity to sentence Hamlet to death. No matter what Hamlet says about only pretending to be insane, no one speaks out against Claudius’ ruling.</p>
+        <p>After Hamlet is killed, Laertes returns to Denmark to be with his grieving sister. His only regret is that he didn’t have the opportunity to kill Hamlet himself.</p>
+        <p>Though Gertrude believed what Hamlet told her, time and grief drove her into Claudius’ arms again. He made her believe that Hamlet was truly mad and that nothing he said was true.</p>
+        <p>Life goes on in Denmark, short of one brooding teen and his girlfriend’s father.</p>
+        <p>Goodnight, sweet prince…</p>
+        <p>ROUTE: CLAUDIUS WINS</p>
+        <button restart>Play again?</button>
+
+
+
+        </page>
+        
+        <page hegoestoschool>
+            <p>Claudius plans for Hamlet’s friends from school, Rosencrantz and Guildenstern, to accompany him back to England.</p>
+            <p>Then, the play, enacting the perceived events of the king’s murder. Hamlet watches Claudius closely, and he does act strangely. When the king is killed, he demands light and flees, along with the rest of the audience. Rosencrantz and Guildenstern approach Hamlet – he’s wanted in his mother’s quarters.</p>
+            <p>Polonius hides himself in Gertrude’s quarters before Hamlet barges in. They argue, and Hamlet gets a little too intense. His mother cries out, and Polonius yells for help. </p>
+            <p><i>Hamlet:
+                    How now, a rat? Dead for a ducat, dead!</i></p>
+
+            <p>Hamlet stabs Polonius and he falls over dead. Hamlet and Gertrude continue to argue until the ghost appears, reminding Hamlet that his mother shouldn’t be blamed and revenge should be sought against Claudius. Hamlet makes Gertrude promise not to tell anyone he’s faking being insane and leaves to hide the body. </p>
+            <p>Once Polonius’ body is found, Hamlet is sent to England with Rosencrantz and Guildenstern. Ophelia is driven mad with grief. Laertes makes his way back to Denmark, plunged into rage once he sees the state of his father and sister.</p>
+			<p> <i> Ophelia:
+                    There’s fennel for you, and columbines.—There’s rue for you, and here’s some for me. We may call it “herb of grace” o’ Sundays.—Oh, you must wear your rue with a difference.—There’s a daisy. I would give you some violets, but they withered all when my father died. They say he made a good end (sings) For bonny sweet Robin is all my joy—</i> </p>
+             <p> <i> Laertes:
+            Thoughts and affliction, passion, hell itself,
+            She turns to favor and to prettiness.</i> </p>
+            <p> <i> 
+                    Ophelia:
+                    (sings)
+                    And will he not come again?
+                    And will he not come again?
+                    No, no, he is dead,
+                    Go to thy deathbed.
+                    He never will come again.</i> </p>
+            <p> Claudius promises Laertes his revenge. Horatio receives a letter that Hamlet is back in Denmark as well. Claudius and Laertes plan a duel to kill Hamlet.</p>
+            <button choice="" stabby="">“A poisoned foil will take care of him”</button>
+            <button choice="" winejewel=""> “We need a backup plan, too” </button>
+        </page>
+        
+        <page stabby="">
+            <p>Laertes and Claudius are confident. A sharpened and poisoned foil will be enough to kill Hamlet with. </p>
+            <p>Gertrude interrupts their planning with news: Ophelia has drowned in the river. Hamlet comes upon Ophelia’s funeral and leaps into her grave to fight with Laertes and proclaim his love. </p>
+            <p>The next day, Hamlet reveals to Horatio that he was supposed to be killed in England, but he switched the letter calling for his death with one calling for the death of Rosencrantz and Guildenstern. Hamlet is issued Laertes’ challenge.</p>
+            <p>Hamlet asks Laertes for forgiveness before their duel, and Laertes says he can’t forgive Hamlet yet, but he can accept his love. </p>
+            <p>Hamlet wins the first strike.</p>
+            <p>And another.</p>
+            <p>Laertes sees his opportunity to strike, but he remarks that to do so is almost against his conscience.</p>
+            <button choice="" poisonhim="">Laertes draws blood</button>
+            <button choice="" momlives="">Laertes holds back</button>
+        </page>
+        
+        <page poisonhim="">
+        <p> Laertes strikes, and the sharpened blade rips through Hamlet’s clothes to break the skin with its poisoned tip. Hamlet fights back after being wounded and manages to strike Laertes with his own sword, drawing blood. </p>
+        <p><i>Laertes:
+            I am justly kill’d with my own treachery</i></p>
+        <p>Laertes reveals the plot to Hamlet and falls dead. Hamlet, in his final act of revenge, strikes down Claudius with the poisoned foil. Before he dies, Hamlet asks Gertrude to live on, hold the throne on her own, and tell the story of what happened here.</p>
+        <p>Goodnight, sweet prince…</p>
+        <p>ROUTE: GERTRUDE TELLS THE TALE</p>
+        <button restart>Play again?</button>
+        </page>
+        
+        
+        <page momlives="">
+        <p>Laertes acts with his conscience and loses to Hamlet. The plan failed, unbeknownst to all except Claudius and Laertes. Everyone survived this encounter, but another plot is surely brewing. </p>
+        <p>Goodnight, sweet prince…</p>
+        <p>ROUTE: MORE TO COME</p>
+        <button restart>Play again?</button>
+        </page>
+        
+        <page winejewel="">
+            <p><i>Claudius:
+                —Soft, let me see.—
+                We’ll make a solemn wager on your cunnings.—
+                I ha ’t! When in your motion you are hot and dry,
+                As make your bouts more violent to that end,
+                And that he calls for drink, I’ll have prepared him
+                A chalice for the nonce, whereon but sipping,
+                If he by chance escape your venomed stuck.</i></p>
+            <p>Gertrude interrupts their planning with news: Ophelia has drowned in the river. Hamlet comes upon Ophelia’s funeral and leaps into her grave to fight with Laertes and proclaim his love. </p>
+            <p>The next day, Hamlet reveals to Horatio that he was supposed to be killed in England, but he switched the letter calling for his death with one calling for the death of Rosencrantz and Guildenstern. Hamlet is issued Laertes’ challenge.</p>
+            <p>Hamlet asks Laertes for forgiveness before their duel, and Laertes says he can’t forgive Hamlet yet, but he can accept his love. </p>
+            <p>Hamlet wins the first strike.</p>
+            <button choice="" thirsty="">Hamlet drinks </button>
+            <button choice="" salty=""> Hamlet doesn't drink </button>
+        </page>
+		
+		<page thirsty="">
+		<p>The fight continues, but Hamlet begins to stumble. He falls and screams about the wine – poison! – before he dies. The people know that this must be the king’s doing, but who can act out against him?</p>
+		<p>Goodnight, sweet prince…</p>
+        <p>ROUTE: TYRANT KING</p>
+        <button restart>Play again?</button>
+		
+		</page>
+        
+        <page salty="">
+            <p>Gertrude drinks instead. Claudius tries to stop her, but he doesn’t want to make a big scene and reveal his plan. Laertes remarks to himself that to strike Hamlet with the poisoned blade is almost against his conscience…</p>   
+            <button choice="" firststrike="">Laertes draws blood</button>
+            <button choice="" bloodbrother="">Laertes holds back</button>
+        </page>
+        
+        <page firststrike="">
+            <p>Laertes strikes, and the sharpened blade rips through Hamlet’s clothes to break the skin with its poisoned tip. Hamlet fights back after being wounded and manages to strike Laertes with his own sword, drawing blood.</p>
+            <p><i>Laertes:
+                I am justly kill’d with my own treachery</i></p>
+            <p>Gertrude cries out to Hamlet that there was something in the drink and dies from the poison. Laertes reveals the plot to Hamlet and falls dead. Hamlet, in his final act of revenge, strikes Claudius with the poisoned blade and forces him to drink the poisoned wine. Before he dies, Hamlet asks Horatio to live on and tell the story of what happened here.</p>
+            <p>Goodnight, sweet prince…</p>
+            <p>ROUTE: TRUE SHAKESPEAREAN</p>
+            <button restart>Play again?</button>
+        </page>
+		
+		<page bloodbrother="">
+		<p>Laertes acts with his conscience and loses to Hamlet. Gertrude calls out to Hamlet that there was something in the drink and dies from the poison. Laertes reveals the plot to Hamlet. Hamlet takes the rest of the poisoned wine and forces Claudius to drink it.</p>
+		<p>Claudius dies, and Hamlet takes over the throne with Laertes by his side! </p>
+		<p>Goodnight, sweet prince…</p>
+        <p>ROUTE: THE NEW KING HAMLET</p>
+        <button restart>Play again?</button>
+		</page>
+        
+    
+    </story> 
+    
+    
+    
+    
+    
+<small>CYO is Developed by Azureda and is open-source and free. All CYO materials are copyrighted by the Must-Praise-Spaghetti-Monster license, which is self-explanatory.</small>
+</body>
+<style>
+story {
+    display: block;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px; 
+    background:url("http://www.destadesign.com/destacms/images/background_border_left.png") left repeat-y,url("http://www.destadesign.com/destacms/images/background_border_right.png") right repeat-y;
+	background-color: #F8F8FF;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+</html>
